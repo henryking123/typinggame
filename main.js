@@ -13,12 +13,12 @@ function init() {
     .then(data => {
       let words = data;
       console.log(words);
-      genWord();
 
       function genWord() {
         const randIndex = Math.floor(Math.random() * words.length);
         $wordDisplay.innerHTML = words[randIndex];
       }
+      genWord();
 
       const $wordInput = document.querySelector("#word-input");
       $wordInput.addEventListener("input", () => {
