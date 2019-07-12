@@ -8,7 +8,7 @@ let score = 0;
 let firstTimePlay;
 
 function init() {
-  fetch("https://random-word-api.herokuapp.com/word?key=GVM14ZJG&number=100")
+  fetch("https://random-word-api.herokuapp.com/word?key=AEW0IMQP&number=100")
     .then(result => result.json())
     .then(data => {
       let words = data;
